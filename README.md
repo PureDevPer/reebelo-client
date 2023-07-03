@@ -10,6 +10,8 @@
 
 A React application implemented with TypeScript using Webpack. It provides a seamless user experience by dynamically loading additional data when the scroll reaches the bottom of the page. This allows for efficient handling of large datasets without overwhelming the user.
 
+-   Server: (https://github.com/PureDevPer/reebelo-server)[https://github.com/PureDevPer/reebelo-server]
+
 ## Features
 
 -   **Scroll-based API Calls:** To enhance performance and avoid loading a large number of products at once, the application implements a dynamic loading mechanism. As the user scrolls to the bottom of the page, an API call is triggered to fetch additional products. This approach ensures a smoother browsing experience, especially when dealing with a substantial amount of data.
