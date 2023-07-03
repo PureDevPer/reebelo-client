@@ -8,6 +8,7 @@ import { IS_LOADING } from "../../constants/home";
 import { IS_NOT_AVAILABLE, QTY, STOCK } from "../../constants/order";
 import ClassNames from "classnames";
 import DropdownMenu from "../dropdown/Dropdown";
+import { convertProductTitle } from "../../utils/utils";
 
 const Order: React.FC = () => {
     const { name }: { name: string } = useParams();
@@ -54,7 +55,7 @@ const Order: React.FC = () => {
                     </div>
                     <div className="orderContainer__product">
                         <div className="orderContainer__product-header">
-                            <div className="title">{currProduct[0].title.split("_").join(" ").toUpperCase()}</div>
+                            <div className="title">{convertProductTitle(currProduct[0].title)}</div>
                             <div className="price">${currProduct[0].price}</div>
                         </div>
                         <div

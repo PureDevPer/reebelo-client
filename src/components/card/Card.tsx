@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import "./Card.scss";
+import { convertProductTitle } from "../../utils/utils";
 
 interface card {
     imgUrl: string;
@@ -14,7 +15,7 @@ const Card = ({ items }: { items: card[] }) => {
             {items.map((item: card, idx: number) => (
                 <Link className="item" key={idx} to={`/order/${item.name}`}>
                     <img alt={item?.name} src={item?.imgUrl} />
-                    <span>{item?.name}</span>
+                    <span>{convertProductTitle(item?.name)}</span>
                 </Link>
             ))}
         </div>
