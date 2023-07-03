@@ -3,14 +3,14 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import { PRODUCT } from "../../api/api";
 import { Product } from "../../interfaces/interfaces";
-import "./Order.scss";
+import "./Product.scss";
 import { IS_LOADING } from "../../constants/home";
 import { IS_NOT_AVAILABLE, QTY, STOCK } from "../../constants/order";
 import ClassNames from "classnames";
 import DropdownMenu from "../dropdown/Dropdown";
 import { convertProductTitle } from "../../utils/utils";
 
-const Order: React.FC = () => {
+const ProductInfo: React.FC = () => {
     const { name }: { name: string } = useParams();
     const [isLoading, setIsLoading] = useState<Boolean>(true);
     const [hasProduct, setHasProduct] = useState<Boolean>(true);
@@ -83,4 +83,4 @@ const Order: React.FC = () => {
     );
 };
 
-export default Order;
+export default ProductInfo;

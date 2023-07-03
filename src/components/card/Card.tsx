@@ -13,7 +13,7 @@ const Card = ({ items }: { items: card[] }) => {
     return (
         <div className="items">
             {items.map((item: card, idx: number) => (
-                <Link className="item" key={idx} to={`/order/${item.name}`}>
+                <Link className="item" key={idx} to={`/product/${item.name}`}>
                     <img alt={item?.name} src={item?.imgUrl} />
                     <span>{convertProductTitle(item?.name)}</span>
                 </Link>
