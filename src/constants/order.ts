@@ -9,3 +9,5 @@ export const STOCK: Stock = {
 };
 
 export const IS_NOT_AVAILABLE: string = "is not available";
+
+export const QTY: string = "Qty: ";

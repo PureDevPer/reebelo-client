@@ -7,7 +7,7 @@
     align-items: center;
     color: white;
     font-size: 19px;
-    background: #eccc68;
+    background: $dropdownMenuColor;
     width: 365px;
     height: 50px;
     font-weight: bold;
@@ -17,16 +17,16 @@
         position: relative;
         text-align: center;
 
-        .dropdownMenuContainer__button {
+        .dropdownMenuContainer__placeholder {
             cursor: pointer;
         }
 
         .dropdownMenuContainer__menu {
-            background: #eccc68;
+            background: $dropdownMenuColor;
             position: absolute;
             top: 52px;
             left: 50%;
-            width: 100px;
+            width: 200px;
             text-align: center;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
             border-radius: 3px;
@@ -53,18 +53,10 @@
                 transform: translate(-50%, -50%);
                 border: 12px solid transparent;
                 border-top-width: 0;
-                border-bottom-color: #eccc68;
+                border-bottom-color: $dropdownMenuColor;
             }
 
             ul {
-                & > li {
-                    margin-bottom: 10px;
-                }
-
-                & > li:first-of-type {
-                    margin-top: 10px;
-                }
-
                 list-style-type: none;
                 padding: 0;
                 margin: 0;
@@ -72,13 +64,27 @@
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
+
+                .dropdownMenuContainer__menu-item {
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: white;
+                    cursor: pointer;
+                }
+
+                .dropdownMenuContainer__menu-item:first-of-type {
+                    margin-top: 10px;
+                }
+
+                // & > li:ho
             }
 
-            a {
-                font-size: 16px;
-                text-decoration: none;
-                color: white;
-            }
+            // a {
+            //     font-size: 16px;
+            //     text-decoration: none;
+            //     color: white;
+            // }
         }
     }
 }

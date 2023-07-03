@@ -5,7 +5,7 @@ import { PRODUCT } from "../../api/api";
 import { Product } from "../../interfaces/interfaces";
 import "./Order.scss";
 import { IS_LOADING } from "../../constants/home";
-import { IS_NOT_AVAILABLE, STOCK } from "../../constants/order";
+import { IS_NOT_AVAILABLE, QTY, STOCK } from "../../constants/order";
 import ClassNames from "classnames";
 import DropdownMenu from "../dropdown/Dropdown";
 
@@ -67,7 +67,7 @@ const Order: React.FC = () => {
                         {currProduct[0]?.quantity > 0 && (
                             <>
                                 <DropdownMenu
-                                    placeholder={"qty: 1"}
+                                    placeholder={`${QTY}1`}
                                     menus={getProductQuantityMenuItems(currProduct[0].quantity)}
                                 />
                                 <button className="orderContainer__product-cart">Add to Cart</button>
