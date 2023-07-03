@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+# Reebelo Full Stack Engineer Case Study
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[https://master--starlit-yeot-236588.netlify.app/](https://master--starlit-yeot-236588.netlify.app/)
 
-## Available Scripts
+<br />
 
-In the project directory, you can run:
+[![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://shields.io/)
+[![typescript](https://img.shields.io/badge/typescript-4.9.5-blue.svg)](https://shields.io/)
+[![webpack](https://img.shields.io/badge/webpack-5.74.0-green.svg)](https://shields.io/)
 
-### `npm start`
+A React application implemented with TypeScript using Webpack. It provides a seamless user experience by dynamically loading additional data when the scroll reaches the bottom of the page. This allows for efficient handling of large datasets without overwhelming the user.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-   **Scroll-based API Calls:** To enhance performance and avoid loading a large number of products at once, the application implements a dynamic loading mechanism. As the user scrolls to the bottom of the page, an API call is triggered to fetch additional products. This approach ensures a smoother browsing experience, especially when dealing with a substantial amount of data.
 
-### `npm test`
+    -   **Lazy Loading Alternative:** In cases where a significant amount of data needs to be displayed initially, lazy loading can be implemented to load data as the user interacts with the page. However, in this implementation, due to limited test data, the decision was made to load more data when the scroll reaches the bottom of the broswer.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-   **Custom Dropdown Menu:** The project includes a custom dropdown menu that is activated when the user clicks on one of the popular phone items. This allows for seamless naviation to a new page, where the dropdown menu can be utilized for further interaction. If no stock is available, the dropdown menu won't be displayed
 
-### `npm run build`
+## Limitation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   **Geolocation-based Caching:** Although caching functionality has not been implemented in the current version, there is an idea to leverage customer geolocation. By integrating gelocation data with the application, the estimated delivery time calculation can be optimized, leading to quicker loading and improved user experience.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+TO run the project locally, follow these steps:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repository: `git clone https://github.com/PureDevPer/reebelo-client.git`
+2. Install dependencies: `npm install`, `yarn`, etc.
+3. Start the development server: `npm run dev`
+4. Open your browser and navigate to `http://localhost:8082`
