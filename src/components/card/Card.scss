@@ -1,0 +1,35 @@
+@import "../../styles/styles.scss";
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid $borderColor;
+        border-radius: 10px;
+        box-shadow: 0px 1px 5px 2px rgba(155, 156, 157, 0.36);
+        padding-bottom: 10px;
+        margin: 15px;
+
+        img {
+            width: 300px;
+            height: 200px;
+            padding: 8%;
+
+            &:hover {
+                transform: scale(1.1) translateY(-5px);
+                cursor: pointer;
+            }
+        }
+
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+}
