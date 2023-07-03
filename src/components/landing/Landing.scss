@@ -1,0 +1,28 @@
+@import "../../styles/styles.scss";
+
+.landing {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: scroll;
+
+    .categories {
+        margin-top: 9%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .categories__phone {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            color: $subMenuColor;
+        }
+
+        .isLoading {
+            color: red;
+        }
+    }
+}
