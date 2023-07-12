@@ -1,6 +1,6 @@
 # Reebelo Full Stack Engineer Case Study
 
-[https://master--starlit-yeot-236588.netlify.app/](https://master--starlit-yeot-236588.netlify.app/)
+~~[https://master--starlit-yeot-236588.netlify.app/](https://master--starlit-yeot-236588.netlify.app/)~~ (**Deleted due to limited budget**)
 
 <br />
 
